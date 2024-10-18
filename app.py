@@ -121,6 +121,7 @@ def main():
     
     # Save the data
     df = pd.DataFrame(data)
+    df["label"] = "" # for doccano annotation format
     df.to_json(f"{args.output_dir}/legal_qa.jsonl", orient="records", lines=True, force_ascii=False)
 
 
