@@ -121,7 +121,7 @@ def main():
     
     # Save the data
     df = pd.DataFrame(data)
-    df.to_json(f"{args.output_dir}/legal_qa.json", orient="records", lines=True, force_ascii=False)
+    df.to_json(f"{args.output_dir}/legal_qa.jsonl", orient="records", lines=True, force_ascii=False)
 
 
 if __name__ == "__main__":
